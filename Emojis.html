@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let myEmojis = [
+            "🙂",
+           "🧮",
+            "🧑" 
+    ]
+    let urlAnimate = () =>{
+        window.location.hash = myEmojis[Math.floor((Date.now()/100)% myEmojis.length)];
+        setTimeout(urlAnimate,1000)
+    }
+    urlAnimate()
+    </script>
+</body>
+</html>
